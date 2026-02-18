@@ -6,7 +6,7 @@ const app = new Hono()
 
 app.get('/', async (c) => {
   const catImageList = await getCatPictures();
-  return c.text('catImageList ' + catImageList)
+  return c.text('catImageList \n' + catImageList.join('\n'))
 })
 
 export default {

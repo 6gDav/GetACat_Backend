@@ -1,6 +1,7 @@
 const SUBREDDIT = "cats";
-const LIMIT = 10;
-const API_URL = `https://www.reddit.com/r/${SUBREDDIT}/hot.json?limit=${LIMIT}`;
+const LIMIT = 55;
+const TAG = "Cat Picture - OC"
+const API_URL = `https://www.reddit.com/r/${SUBREDDIT}/search.json?q=flair:"${TAG}"&restrict_sr=1&limit=${LIMIT}`;
 
 async function getCatPictures() {
   console.log(`🐱 Cicas képek keresése a r/${SUBREDDIT} subredditen...`);
@@ -28,10 +29,14 @@ async function getCatPictures() {
       const { title, url, post_hint } = post.data;
 
       // Csak olyan posztokat nézünk, amik tényleg képek
-      if (post_hint === "image" || url.match(/\.(jpg|jpeg|png|gif)$/)) {
+      // if (post_hint === "image" || url.match(/\.(jpg|jpeg|png|gif)$/)) 
 
+      //kell a tobbi kép tipus 
+
+      if (post_hint === "image" || url.match(/\.(jpeg)$/)) {
         console.log(`\n[${index + 1}] ${title}`);
         console.log(`🔗 Link: ${url}`);
+        savingImages(url);
         catImageList.push(url);
       }
     });
@@ -43,3 +48,17 @@ async function getCatPictures() {
 }
 
 export default getCatPictures;
+
+async function savingImages(url: string)
+{
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) throw Error("URL can't be fatched.");
+
+    await Bun.write("./images/" + url + ".jpeg", response);
+  }
+  catch (error) {
+    console.error("❌ Hiba a mentés során:", error);
+  }
+}
