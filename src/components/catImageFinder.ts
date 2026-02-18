@@ -27,16 +27,10 @@ async function getCatPictures() {
 
     posts.forEach((post: any, index: number) => {
       const { title, url, post_hint } = post.data;
-
-      // Csak olyan posztokat nézünk, amik tényleg képek
-      // if (post_hint === "image" || url.match(/\.(jpg|jpeg|png|gif)$/)) 
-
-      //kell a tobbi kép tipus 
-
-      if (post_hint === "image" || url.match(/\.(jpeg)$/)) {
+      if (post_hint === "image" || url.match(/\.(jpg|jpeg|png|gif)$/)) {
         console.log(`\n[${index + 1}] ${title}`);
         console.log(`🔗 Link: ${url}`);
-        savingImages(url);
+        //savingImages(url);
         catImageList.push(url);
       }
     });
@@ -49,16 +43,15 @@ async function getCatPictures() {
 
 export default getCatPictures;
 
-async function savingImages(url: string)
-{
-  try {
-    const response = await fetch(url);
+// async function savingImages(url: string)
+// {
+//   try {
+//     const response = await fetch(url);
+//     if (!response.ok) throw Error("URL can't be fatched.");
 
-    if (!response.ok) throw Error("URL can't be fatched.");
-
-    await Bun.write("./images/" + url + ".jpeg", response);
-  }
-  catch (error) {
-    console.error("❌ Hiba a mentés során:", error);
-  }
-}
+//     await Bun.write("./images/" + url, response);
+//   }
+//   catch (error) {
+//     console.error("❌ Hiba a mentés során:", error);
+//   }
+// }

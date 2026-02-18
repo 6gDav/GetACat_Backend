@@ -1,13 +1,25 @@
 import { Hono } from 'hono'
 import getCatPictures from './components/catImageFinder'
+import { html } from 'hono/html'
+
+type Varibles = {
+  catImages: string[]
+}
+
+const app = new Hono<{ Variables: Varibles }>()
+
+app.use('*', async (c, next) => {
+  const images = await getCatPictures();
+  c.set('catImages', images);
+  await next();
+});
 
 
-const app = new Hono()
+app.get('/get-a-cat-image', async (c) => {
+  const images = c.get('catImages');
 
-app.get('/', async (c) => {
-  const catImageList = await getCatPictures();
-  return c.text('catImageList \n' + catImageList.join('\n'))
-})
+  return c.json(images)
+});
 
 export default {
   fetch: app.fetch,
