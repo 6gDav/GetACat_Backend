@@ -4,12 +4,12 @@ const TAG = "Cat Picture - OC"
 const API_URL = `https://www.reddit.com/r/${SUBREDDIT}/search.json?q=flair:"${TAG}"&restrict_sr=1&limit=${LIMIT}`;
 
 async function getCatPictures() {
-  console.log(`🐱 Cicas képek keresése a r/${SUBREDDIT} subredditen...`);
+  console.log(`Cat images form r/${SUBREDDIT}...`);
 
   const catImageList: any[] = [];
 
   try {
-    // 1. Kérés küldése
+    // 1. Send Request
     const response = await fetch(API_URL, {
       headers: {
         "User-Agent": "Bun:CatCrawler:v1.0 (by /u/reddit-user)",
@@ -22,20 +22,18 @@ async function getCatPictures() {
 
     const data = await response.json();
 
-    // 2. Adatok feldolgozása
+    // 2. Processing Data
     const posts = data.data.children;
 
     posts.forEach((post: any, index: number) => {
-      const { title, url, post_hint } = post.data;
+      const { url, post_hint } = post.data;
       if (post_hint === "image" || url.match(/\.(jpg|jpeg|png|gif)$/)) {
-        console.log(`\n[${index + 1}] ${title}`);
-        console.log(`🔗 Link: ${url}`);
         //savingImages(url);
         catImageList.push(url);
       }
     });
   } catch (error) {
-    console.error("❌ Hiba a letöltés során:", error);
+    console.error("Error occurd while trying to download the files :", error);
   }
 
   return catImageList;

@@ -1,6 +1,5 @@
 import { Hono } from 'hono'
 import getCatPictures from './components/catImageFinder'
-import { html } from 'hono/html'
 
 type Varibles = {
   catImages: string[]
@@ -17,7 +16,6 @@ app.use('*', async (c, next) => {
 
 app.get('/get-a-cat-image', async (c) => {
   const images = c.get('catImages');
-
   return c.json(images)
 });
 
