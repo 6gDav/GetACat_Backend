@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import getCatPictures from './components/catImageFinder'
+import limiter from './components/rateLimiter'
 
 type Varibles = {
   catImages: string[]
@@ -20,7 +21,7 @@ app.use('*', async (c, next) => {
 });
 
 
-app.get('/get-a-cat-image', async (c) => {
+app.get('/get-a-cat-image', limiter, async (c) => {
   const images = c.get('catImages');
   return c.json(images)
 });

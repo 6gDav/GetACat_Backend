@@ -12,7 +12,7 @@ const limiter = rateLimiter({
     return ip.split(',')[0].trim()
   },
   handler: (c) => {
-    return c.text('Túl sok kérés, próbáld újra később!', 429)
+    return c.text('Too mutch request pls try again later', 429)
   }
 })
 
