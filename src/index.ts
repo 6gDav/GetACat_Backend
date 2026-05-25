@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { cors } from 'hono/cors'
 import getCatPictures from './components/catImageFinder'
 
 type Varibles = {
@@ -6,6 +7,11 @@ type Varibles = {
 }
 
 const app = new Hono<{ Variables: Varibles }>()
+
+app.use('*', cors({
+  origin: '*',
+  allowMethods: ['GET'],
+}))
 
 app.use('*', async (c, next) => {
   const images = await getCatPictures();
