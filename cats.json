@@ -1,0 +1,26 @@
+[
+  {
+    "id": "siamese",
+    "name": "Siamese",
+    "lifespan": "12-15",
+    "avg_weight": 4.5,
+    "colors": ["seal", "blue", "chocolate", "purple"],
+    "character": "Playfull, Talkative, Affectionate"
+  },
+  {
+    "id": "maine_coon",
+    "name": "Maine Coon",
+    "lifespan": "10-13",
+    "avg_weight": 7.5,
+    "colors": ["white", "black", "red", "blue", "tabby"],
+    "character": "Gentle giant, Friendly, Intelligent"
+  },
+  {
+    "id": "domestic",
+    "name": "Domestic",
+    "lifespan": "12-20",
+    "avg_weight": 4.9,
+    "colors": ["every color"],
+    "character": "Szelíd óriás, barátságos, intelligens"
+  }
+]
