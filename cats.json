@@ -4,15 +4,26 @@
     "name": "Siamese",
     "lifespan": "12-15",
     "avg_weight": 4.5,
-    "colors": ["seal", "blue", "chocolate", "purple"],
-    "character": "Playfull, Talkative, Affectionate"
+    "colors": [
+      "seal",
+      "blue",
+      "chocolate",
+      "lilac"
+    ],
+    "character": "Playful, Talkative, Affectionate"
   },
   {
     "id": "maine_coon",
     "name": "Maine Coon",
     "lifespan": "10-13",
     "avg_weight": 7.5,
-    "colors": ["white", "black", "red", "blue", "tabby"],
+    "colors": [
+      "white",
+      "black",
+      "red",
+      "blue",
+      "tabby"
+    ],
     "character": "Gentle giant, Friendly, Intelligent"
   },
   {
@@ -20,7 +31,223 @@
     "name": "Domestic",
     "lifespan": "12-20",
     "avg_weight": 4.9,
-    "colors": ["every color"],
-    "character": "Szelíd óriás, barátságos, intelligens"
-  }
+    "colors": [
+      "every colors"
+    ],
+    "character": "Adaptable, Independent, Affectionate"
+  },
+  {
+    "id": "persian",
+    "name": "Persian",
+    "lifespan": "10-15",
+    "avg_weight": 4.5,
+    "colors": [
+      "white",
+      "black",
+      "blue",
+      "red",
+      "cream"
+    ],
+    "character": "Quiet, Docile, Affectionate"
+  },
+  {
+    "id": "ragdoll",
+    "name": "Ragdoll",
+    "lifespan": "12-15",
+    "avg_weight": 6.8,
+    "colors": [
+      "seal",
+      "blue",
+      "chocolate",
+      "lilac",
+      "red",
+      "cream"
+    ],
+    "character": "Gentle, Placid, Affectionate"
+  },
+  {
+    "id": "sphynx",
+    "name": "Sphynx",
+    "lifespan": "14-15",
+    "avg_weight": 4.0,
+    "colors": [
+      "white",
+      "black",
+      "red",
+      "chocolate",
+      "lavender"
+    ],
+    "character": "Energetic, Intelligent, Affectionate"
+  },
+  {
+    "id": "british_shorthair",
+    "name": "British Shorthair",
+    "lifespan": "14-20",
+    "avg_weight": 6.0,
+    "colors": [
+      "blue",
+      "black",
+      "white",
+      "red",
+      "cream",
+      "silver",
+      "golden"
+    ],
+    "character": "Calm, Easygoing, Loyal"
+  },
+  {
+    "id": "abyssinian",
+    "name": "Abyssinian",
+    "lifespan": "9-15",
+    "avg_weight": 3.6,
+    "colors": [
+      "ruddy",
+      "red",
+      "blue",
+      "fawn"
+    ],
+    "character": "Active, Energetic, Independent"
+  },
+  {
+    "id": "scottish_fold",
+    "name": "Scottish Fold",
+    "lifespan": "11-14",
+    "avg_weight": 4.0,
+    "colors": [
+      "white",
+      "black",
+      "blue",
+      "red",
+      "cream",
+      "silver"
+    ],
+    "character": "Sweet, Adaptable, Affectionate"
+  },
+  {
+    "id": "bengal",
+    "name": "Bengal",
+    "lifespan": "12-16",
+    "avg_weight": 5.5,
+    "colors": [
+      "brown",
+      "snow",
+      "silver"
+    ],
+    "character": "Active, Intelligent, Playful"
+  },
+  {
+    "id": "russian_blue",
+    "name": "Russian Blue",
+    "lifespan": "15-20",
+    "avg_weight": 4.5,
+    "colors": [
+      "blue",
+      "grey"
+    ],
+    "character": "Reserved, Gentle, Intelligent"
+  },
+  {
+  "id": "serval",
+  "name": "Serval",
+  "lifespan": "10-20",
+  "avg_weight": 11.5,
+  "colors": [
+    "golden-yellow",
+    "black-spotted"
+  ],
+  "character": "Independent, Alert, Intelligent, High-energy"
+},
+{
+  "id": "caracal",
+  "name": "Caracal",
+  "lifespan": "12-19",
+  "avg_weight": 14.0,
+  "colors": [
+    "reddish-sand",
+    "tawny-brown"
+  ],
+  "character": "Solitary, Fierce, Agile, Highly-intelligent"
+},
+{
+  "id": "japanese_bobtail",
+  "name": "Japanese Bobtail",
+  "lifespan": "9-15",
+  "avg_weight": 3.6,
+  "colors": [
+    "white-red-black (Mi-ke)",
+    "bicolor",
+    "solid",
+    "tabby"
+  ],
+  "character": "Active, Sweet, Highly-intelligent, Vocal"
+},
+{
+  "id": "egyptian_mau",
+  "name": "Egyptian Mau",
+  "lifespan": "12-15",
+  "avg_weight": 4.0,
+  "colors": [
+    "silver",
+    "bronze",
+    "smoke"
+  ],
+  "character": "Extremely-loyal, Active, Sensitive, Playful"
+},
+{
+  "id": "norwegian_forest_cat",
+  "name": "Norwegian Forest Cat",
+  "lifespan": "14-16",
+  "avg_weight": 6.5,
+  "colors": [
+    "tabby-with-white",
+    "solid",
+    "tortoiseshell",
+    "bicolor"
+  ],
+  "character": "Gentle, Independent, Intelligent, Family-oriented"
+},
+{
+  "id": "persian",
+  "name": "Persian",
+  "lifespan": "12-15",
+  "avg_weight": 4.5,
+  "colors": [
+    "solid",
+    "chinchilla",
+    "calico",
+    "bi-color",
+    "pointed"
+  ],
+  "character": "Quiet, Sweet, Docile, Placid"
+},
+{
+  "id": "munchkin",
+  "name": "Munchkin",
+  "lifespan": "12-15",
+  "avg_weight": 3.2,
+  "colors": [
+    "every colors"
+  ],
+  "character": "Outgoing, Playful, Confident, Loving"
+},
+{
+  "id": "bombay",
+  "name": "Bombay",
+  "lifespan": "12-16",
+  "avg_weight": 4.1,
+  "colors": [
+    "solid-black"
+  ],
+  "character": "Affectionate, Outgoing, Intelligent, Lap-cat"
+},
+{
+  "id": "cornish_rex",
+  "name": "Cornish Rex",
+  "lifespan": "11-15",
+  "avg_weight": 3.4,
+  "colors": [
+    "all-colors-and-patterns"
+  ],
+  "character": "High-energy, Affectionate, Intelligent, Adventurous"
+}
 ]
