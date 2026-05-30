@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { logger } from 'hono/logger' 
 import { cors } from 'hono/cors'
 import getCatPictures from './components/catImageFinder'
 import limiter from './components/rateLimiter'
@@ -13,7 +14,9 @@ const app = new Hono<{ Variables: Varibles }>()
 app.use('*', cors({
   origin: '*',
   allowMethods: ['GET'],
-}))
+}),
+)
+app.use('*', logger())
 
 
 app.get('/get-a-cat-image', limiter, async (c) => {
