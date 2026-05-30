@@ -9,7 +9,7 @@ type Varibles = {
   catImages: string[]
 }
 
-const app = new Hono<{ Variables: Varibles }>()
+export const app = new Hono<{ Variables: Varibles }>()
 
 app.use('*', cors({
   origin: '*',
@@ -21,6 +21,18 @@ app.use('*', logger())
 
 app.get('/get-a-cat-image', limiter, async (c) => {
   const images = await getCatPictures();
+
+  if (!images)
+  {
+      return c.json(
+      {
+        success: false,
+        message: `Error occured while tring to fetch cat images`
+      },
+      500
+    );
+  }
+
   return c.json(images)
 });
 

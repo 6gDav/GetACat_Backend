@@ -12,12 +12,14 @@ async function getCatPictures() {
     // 1. Send Request
     const response = await fetch(API_URL, {
       headers: {
-        "User-Agent": "Bun:CatCrawler:v1.0 (by /u/reddit-user)",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "application/json",
+        "Accept-Language": "en-US,en;q=0.9"
       },
     });
 
     if (!response.ok) {
-      throw new Error(`Hiba történt: ${response.statusText}`);
+      throw new Error(`Error occured: ${response.statusText}`);
     }
 
     const data = await response.json();
@@ -41,15 +43,19 @@ async function getCatPictures() {
 
 export default getCatPictures;
 
-// async function savingImages(url: string)
-// {
+// async function savingImages(url: string) {
 //   try {
-//     const response = await fetch(url);
-//     if (!response.ok) throw Error("URL can't be fatched.");
+//     const response = await fetch(url, {
+//       headers: { "User-Agent": "Mozilla/5.0..." } // Ide is kell a fejléc!
+//     });
+//     if (!response.ok) throw new Error("URL can't be fetched.");
 
-//     await Bun.write("./images/" + url, response);
-//   }
-//   catch (error) {
+//     // Kivágjuk a fájl nevét az URL végéről (pl. xyz.jpg)
+//     const filename = url.split("/").pop(); 
+    
+//     await Bun.write("./images/" + filename, response);
+//     console.log(`✅ Mentve: ${filename}`);
+//   } catch (error) {
 //     console.error("❌ Hiba a mentés során:", error);
 //   }
 // }
