@@ -2,7 +2,7 @@ const SEARCH_QUERY = "cats";
 const PUBLIC_IMGUR_CLIENT_ID = "546c25a59c58ad7";  //Public client side imgur API client id
 const API_URL = `https://api.imgur.com/3/gallery/search/time/all/1?q=${SEARCH_QUERY}`;
 
-async function getCatPictures() {
+async function getCatPictures(): Promise<string[]> {
   console.log(`Cat images from Imgur (::: ${SEARCH_QUERY})...`);
 
   const catImageList: string[] = [];
