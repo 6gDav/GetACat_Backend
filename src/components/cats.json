@@ -4,250 +4,179 @@
     "name": "Siamese",
     "lifespan": "12-15",
     "avg_weight": 4.5,
-    "colors": [
-      "seal",
-      "blue",
-      "chocolate",
-      "lilac"
-    ],
-    "character": "Playful, Talkative, Affectionate"
+    "colors": "seal, blue, chocolate, lilac",
+    "character": "Playful, Talkative, Affectionate",
+    "image": "https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/fca42f04-2474-4302-a238-990c8aebfe8c/Siamese_cat_1110x740.jpg"
   },
   {
     "id": "maine_coon",
     "name": "Maine Coon",
     "lifespan": "10-13",
     "avg_weight": 7.5,
-    "colors": [
-      "white",
-      "black",
-      "red",
-      "blue",
-      "tabby"
-    ],
-    "character": "Gentle giant, Friendly, Intelligent"
+    "colors": "white, black, red, blue, tabby",
+    "character": "Gentle giant, Friendly, Intelligent",
+    "image": "https://www.zooplus.co.uk/magazine/wp-content/uploads/2019/03/maine-coon-cat-breed.webp"
   },
   {
     "id": "domestic",
     "name": "Domestic",
     "lifespan": "12-20",
     "avg_weight": 4.9,
-    "colors": [
-      "every colors"
-    ],
-    "character": "Adaptable, Independent, Affectionate"
+    "colors": "every colors",
+    "character": "Adaptable, Independent, Affectionate",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/A-Cat.jpg/3840px-A-Cat.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
   },
   {
     "id": "persian",
     "name": "Persian",
     "lifespan": "10-15",
     "avg_weight": 4.5,
-    "colors": [
-      "white",
-      "black",
-      "blue",
-      "red",
-      "cream"
-    ],
-    "character": "Quiet, Docile, Affectionate"
+    "colors": "white, black, blue, red, cream",
+    "character": "Quiet, Docile, Affectionate",
+    "image": "https://www.vetstreet.com/wp-content/uploads/2022/09/view-pet-portrait-cat-mammal-close-843475-pxhere.com-1.jpg"
   },
   {
     "id": "ragdoll",
     "name": "Ragdoll",
     "lifespan": "12-15",
     "avg_weight": 6.8,
-    "colors": [
-      "seal",
-      "blue",
-      "chocolate",
-      "lilac",
-      "red",
-      "cream"
-    ],
-    "character": "Gentle, Placid, Affectionate"
+    "colors": "seal, blue, chocolate, lilac, red, cream",
+    "character": "Gentle, Placid, Affectionate",
+    "image": "https://almontecats.com/wp-content/uploads/sites/58681/2025/11/lilac-point-ragdoll-almontecats.com_-771x1024.png"
   },
   {
     "id": "sphynx",
     "name": "Sphynx",
     "lifespan": "14-15",
     "avg_weight": 4.0,
-    "colors": [
-      "white",
-      "black",
-      "red",
-      "chocolate",
-      "lavender"
-    ],
-    "character": "Energetic, Intelligent, Affectionate"
+    "colors": "white, black, red, chocolate, lavender",
+    "character": "Energetic, Intelligent, Affectionate",
+    "image": "https://www.waggel.co.uk/cdn-cgi/image/fit=cover,format=auto,width=607,height=420/https://images.ctfassets.net/4cuokmrwdiqv/1O1IwUjACE1XmXCZBDoBAn/29c241c8cdbd3200c659b9b6b25216c0/sphynx-breed-page-large-image-1.1.jpg"
   },
   {
     "id": "british_shorthair",
     "name": "British Shorthair",
     "lifespan": "14-20",
     "avg_weight": 6.0,
-    "colors": [
-      "blue",
-      "black",
-      "white",
-      "red",
-      "cream",
-      "silver",
-      "golden"
-    ],
-    "character": "Calm, Easygoing, Loyal"
+    "colors": "blue, black, white, red, cream, silver, golden",
+    "character": "Calm, Easygoing, Loyal",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbST3-HhPj8T3Vs27CHicul8RJwseUD6l27g&s"
   },
   {
     "id": "abyssinian",
     "name": "Abyssinian",
     "lifespan": "9-15",
     "avg_weight": 3.6,
-    "colors": [
-      "ruddy",
-      "red",
-      "blue",
-      "fawn"
-    ],
-    "character": "Active, Energetic, Independent"
+    "colors": "ruddy, red, blue, fawn",
+    "character": "Active, Energetic, Independent",
+    "image": "https://thewaggintrain.com/wp-content/uploads/2024/09/abyssinian-cat-breed-info.png"
   },
   {
     "id": "scottish_fold",
     "name": "Scottish Fold",
     "lifespan": "11-14",
     "avg_weight": 4.0,
-    "colors": [
-      "white",
-      "black",
-      "blue",
-      "red",
-      "cream",
-      "silver"
-    ],
-    "character": "Sweet, Adaptable, Affectionate"
+    "colors": "white, black, blue, red, cream, silver",
+    "character": "Sweet, Adaptable, Affectionate",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Solid_lilac_SFS.JPG/250px-Solid_lilac_SFS.JPG"
   },
   {
     "id": "bengal",
     "name": "Bengal",
     "lifespan": "12-16",
     "avg_weight": 5.5,
-    "colors": [
-      "brown",
-      "snow",
-      "silver"
-    ],
-    "character": "Active, Intelligent, Playful"
+    "colors": "brown, snow, silver",
+    "character": "Active, Intelligent, Playful",
+    "image": "https://www.purina.com/sites/default/files/styles/social_share/public/2025-08/bengal_4.jpg?h=82f92a78&itok=T1j2VsGM"
   },
   {
     "id": "russian_blue",
     "name": "Russian Blue",
     "lifespan": "15-20",
     "avg_weight": 4.5,
-    "colors": [
-      "blue",
-      "grey"
-    ],
-    "character": "Reserved, Gentle, Intelligent"
+    "colors": "blue, grey",
+    "character": "Reserved, Gentle, Intelligent",
+    "image": "https://www.whiskas.co.uk/sites/g/files/fnmzdf8916/files/2025-05/Russian-blue.jpg"
   },
   {
-  "id": "serval",
-  "name": "Serval",
-  "lifespan": "10-20",
-  "avg_weight": 11.5,
-  "colors": [
-    "golden-yellow",
-    "black-spotted"
-  ],
-  "character": "Independent, Alert, Intelligent, High-energy"
-},
-{
-  "id": "caracal",
-  "name": "Caracal",
-  "lifespan": "12-19",
-  "avg_weight": 14.0,
-  "colors": [
-    "reddish-sand",
-    "tawny-brown"
-  ],
-  "character": "Solitary, Fierce, Agile, Highly-intelligent"
-},
-{
-  "id": "japanese_bobtail",
-  "name": "Japanese Bobtail",
-  "lifespan": "9-15",
-  "avg_weight": 3.6,
-  "colors": [
-    "white-red-black (Mi-ke)",
-    "bicolor",
-    "solid",
-    "tabby"
-  ],
-  "character": "Active, Sweet, Highly-intelligent, Vocal"
-},
-{
-  "id": "egyptian_mau",
-  "name": "Egyptian Mau",
-  "lifespan": "12-15",
-  "avg_weight": 4.0,
-  "colors": [
-    "silver",
-    "bronze",
-    "smoke"
-  ],
-  "character": "Extremely-loyal, Active, Sensitive, Playful"
-},
-{
-  "id": "norwegian_forest_cat",
-  "name": "Norwegian Forest Cat",
-  "lifespan": "14-16",
-  "avg_weight": 6.5,
-  "colors": [
-    "tabby-with-white",
-    "solid",
-    "tortoiseshell",
-    "bicolor"
-  ],
-  "character": "Gentle, Independent, Intelligent, Family-oriented"
-},
-{
-  "id": "persian",
-  "name": "Persian",
-  "lifespan": "12-15",
-  "avg_weight": 4.5,
-  "colors": [
-    "solid",
-    "chinchilla",
-    "calico",
-    "bi-color",
-    "pointed"
-  ],
-  "character": "Quiet, Sweet, Docile, Placid"
-},
-{
-  "id": "munchkin",
-  "name": "Munchkin",
-  "lifespan": "12-15",
-  "avg_weight": 3.2,
-  "colors": [
-    "every colors"
-  ],
-  "character": "Outgoing, Playful, Confident, Loving"
-},
-{
-  "id": "bombay",
-  "name": "Bombay",
-  "lifespan": "12-16",
-  "avg_weight": 4.1,
-  "colors": [
-    "solid-black"
-  ],
-  "character": "Affectionate, Outgoing, Intelligent, Lap-cat"
-},
-{
-  "id": "cornish_rex",
-  "name": "Cornish Rex",
-  "lifespan": "11-15",
-  "avg_weight": 3.4,
-  "colors": [
-    "all-colors-and-patterns"
-  ],
-  "character": "High-energy, Affectionate, Intelligent, Adventurous"
-}
+    "id": "serval",
+    "name": "Serval",
+    "lifespan": "10-20",
+    "avg_weight": 11.5,
+    "colors": "golden-yellow, black-spotted",
+    "character": "Independent, Alert, Intelligent, High-energy",
+    "image": "https://zooboise.org/wp-content/uploads/2024/01/2024-Serval-SSP-block.jpg"
+  },
+  {
+    "id": "caracal",
+    "name": "Caracal",
+    "lifespan": "12-19",
+    "avg_weight": 14.0,
+    "colors": "reddish-sand, tawny-brown",
+    "character": "Solitary, Fierce, Agile, Highly-intelligent",
+    "image": "https://animalfactguide.com/wp-content/uploads/2024/01/caracal.jpg"
+  },
+  {
+    "id": "japanese_bobtail",
+    "name": "Japanese Bobtail",
+    "lifespan": "9-15",
+    "avg_weight": 3.6,
+    "colors": "white-red-black (Mi-ke), bicolor, solid, tabby",
+    "character": "Active, Sweet, Highly-intelligent, Vocal",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/JapaneseBobtailBlueEyedMi-ke.JPG"
+  },
+  {
+    "id": "egyptian_mau",
+    "name": "Egyptian Mau",
+    "lifespan": "12-15",
+    "avg_weight": 4.0,
+    "colors": "silver, bronze, smoke",
+    "character": "Extremely-loyal, Active, Sensitive, Playful",
+    "image": "https://www.dailypaws.com/thmb/c7mIpPRoh53Q9oQNidFZw_DepIk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/egyptian-mau-sitting-on-fence-baguettemau-98c158e30ddc4baaa25fd88edfe0901d.jpg"
+  },
+  {
+    "id": "norwegian_forest_cat",
+    "name": "Norwegian Forest Cat",
+    "lifespan": "14-16",
+    "avg_weight": 6.5,
+    "colors": "tabby-with-white, solid, tortoiseshell, bicolor",
+    "character": "Gentle, Independent, Intelligent, Family-oriented",
+    "image": "https://www.thesprucepets.com/thmb/c4xUQ9bmuswDR-umoAKTmwH_r-A=/1500x0/filters:no_upscale():strip_icc()/norwegian-forest-cat-4170085-fe84aa86023446c4b64236ddfbdefd2b.jpg"
+  },
+  {
+    "id": "persian",
+    "name": "Persian",
+    "lifespan": "12-15",
+    "avg_weight": 4.5,
+    "colors": "solid, chinchilla, calico, bi-color, pointed",
+    "character": "Quiet, Sweet, Docile, Placid",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDPvtzMT4Cx0zY00-c4kvD2q5mubrkSoIM2w&s"
+  },
+  {
+    "id": "munchkin",
+    "name": "Munchkin",
+    "lifespan": "12-15",
+    "avg_weight": 3.2,
+    "colors": "every colors",
+    "character": "Outgoing, Playful, Confident, Loving",
+    "image": "https://cats.com/wp-content/uploads/2020/10/cute-munchkin-cat.jpg"
+  },
+  {
+    "id": "bombay",
+    "name": "Bombay",
+    "lifespan": "12-16",
+    "avg_weight": 4.1,
+    "colors": "solid-black",
+    "character": "Affectionate, Outgoing, Intelligent, Lap-cat",
+    "image": "https://www.purina.com/sites/default/files/styles/social_share/public/2025-08/bombay_cat_4.jpg?h=82f92a78&itok=a1pa9PE-"
+  },
+  {
+    "id": "cornish_rex",
+    "name": "Cornish Rex",
+    "lifespan": "11-15",
+    "avg_weight": 3.4,
+    "colors": "all-colors-and-patterns",
+    "character": "High-energy, Affectionate, Intelligent, Adventurous",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkkxsP9r1q1GUeOpqy4XoPjZcKb0YEJos6hw&s"
+  }
 ]

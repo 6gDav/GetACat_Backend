@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import { logger } from 'hono/logger' 
+import { logger } from 'hono/logger'
 import { cors } from 'hono/cors'
 import getCatPictures from './components/catImageFinder'
 import limiter from './components/rateLimiter'
@@ -22,9 +22,8 @@ app.use('*', logger())
 app.get('/get-a-cat-image', limiter, async (c) => {
   const images = await getCatPictures();
 
-  if (!images)
-  {
-      return c.json(
+  if (!images) {
+    return c.json(
       {
         success: false,
         message: `Error occured while tring to fetch cat images`
@@ -36,16 +35,16 @@ app.get('/get-a-cat-image', limiter, async (c) => {
   return c.json(images)
 });
 
-app.get('/get-a-cat-info/:id', limiter, async (c) => {
+app.get('/get-a-cat-info/:name', async (c) => {
 
-  const catId = c.req.param('id');
+  const catName = c.req.param('name');
 
-  const catInfo = catDatabase.find((cat) => cat.id === catId);
+  const catInfo = catDatabase.find((cat) => cat.name === catName);
   if (!catInfo) {
     return c.json(
       {
         success: false,
-        message: `Cat with ID '${catId}' not found.`
+        message: `Cat with ID '${catName}' not found.`
       },
       404
     );
@@ -54,19 +53,19 @@ app.get('/get-a-cat-info/:id', limiter, async (c) => {
   return c.json(catInfo);
 });
 
-app.get('/get-a-cat-info-datail/:id/:datail', limiter, async (c) => {
+app.get('/get-a-cat-info-datail/:name/:datail', async (c) => {
 
-  const catId = c.req.param('id');
-  const catDetail = c.req.param('datail'); 
+  const catName = c.req.param('name');
+  const catDetail = c.req.param('datail');
 
-  const catInfo = catDatabase.find((cat) => cat.id === catId);
+  const catInfo = catDatabase.find((cat) => cat.name === catName);
   const catInfoDetail = catInfo?.[catDetail as keyof typeof catInfo];
 
   if (!catInfo || !catInfoDetail) {
     return c.json(
       {
         success: false,
-        message: `Cat with ID '${catId}' or Datail ${catInfoDetail} not found.`
+        message: `Cat with ID '${catName}' or Datail ${catInfoDetail} not found.`
       },
       404
     );
@@ -74,6 +73,12 @@ app.get('/get-a-cat-info-datail/:id/:datail', limiter, async (c) => {
   console.log(catInfoDetail)
 
   return c.json(catInfoDetail);
+});
+
+app.get('/get-a-cat-info-datail/get-all-names/', limiter, async (c) => {
+  const catNames = catDatabase.filter((cat) => cat.name).map((cat) => cat.name);
+
+  return c.json(catNames);
 });
 
 export default {
