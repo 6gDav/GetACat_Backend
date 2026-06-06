@@ -36,7 +36,6 @@ app.get('/get-a-cat-image', limiter, async (c) => {
 });
 
 app.get('/get-a-cat-info/:name', async (c) => {
-
   const catName = c.req.param('name');
 
   const catInfo = catDatabase.find((cat) => cat.name === catName);
