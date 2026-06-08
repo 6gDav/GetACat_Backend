@@ -1,7 +1,7 @@
 FROM oven/bun:1 as base
 WORKDIR /usr/src/app
 
-COPY package.json bun.lockb ./
+COPY package.json bun.lock ./
 RUN bun install --frozen-lockfile
 
 COPY . .
@@ -13,6 +13,6 @@ WORKDIR /usr/src/app
 
 COPY --from=base /usr/src/app /usr/src/app
 
-EXPOSE 3001
+EXPOSE 10000
 
 CMD ["bun", "run", "src/index.ts"]
