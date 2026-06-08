@@ -4,7 +4,6 @@ import { cors } from 'hono/cors'
 import catImagesRouter from './components/routes/catImages'
 import catInfoRouter from './components/routes/catInfo'
 import catInfoDetailRouter from './components/routes/catInfoDetail'
-import catsRouter from './components/routes/catsRouter'
 
 type Varibles = {
   catImages: string[]
@@ -18,10 +17,12 @@ app.use('*', cors({
 }))
 app.use('*', logger())
 
-app.route('/', catsRouter)
+app.get('/favicon.ico', (c) => c.body(null, 204))
+
 app.route('/', catImagesRouter)
 app.route('/', catInfoRouter)
 app.route('/', catInfoDetailRouter)
+
 
 export default {
   fetch: app.fetch,
