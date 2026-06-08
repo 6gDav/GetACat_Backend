@@ -27,15 +27,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/A-Cat.jpg/3840px-A-Cat.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
   },
   {
-    "id": "persian",
-    "name": "Persian",
-    "lifespan": "10-15",
-    "avg_weight": 4.5,
-    "colors": "white, black, blue, red, cream",
-    "character": "Quiet, Docile, Affectionate",
-    "image": "https://www.vetstreet.com/wp-content/uploads/2022/09/view-pet-portrait-cat-mammal-close-843475-pxhere.com-1.jpg"
-  },
-  {
     "id": "ragdoll",
     "name": "Ragdoll",
     "lifespan": "12-15",
