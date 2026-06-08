@@ -1,1 +1,3 @@
-# This is the working prototype of the cat image finder
+# GetACat Backend
+
+# (I will finish this later. I want to test my shi...)
