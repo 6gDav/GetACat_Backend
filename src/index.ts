@@ -19,10 +19,10 @@ app.use('*', logger())
 
 app.get('/favicon.ico', (c) => c.body(null, 204))
 
-app.route('/', catImagesRouter)
-app.route('/', catInfoRouter)
-app.route('/', catInfoDetailRouter)
-
+app.route('/', catImagesRouter) // :: /get-a-cat-image => http://localhost:3001/get-a-cat-image
+app.route('/', catInfoRouter) // :: /get-a-cat-info/:name => http://localhost:3001/get-a-cat-info/Ragdoll
+app.route('/', catInfoDetailRouter) // :: /get-a-cat-info-datail/get-all-names/ => http://localhost:3001/get-a-cat-info-datail/get-all-names/
+                                    // :: //get-a-cat-info-datail/:name/:datail => http://localhost:3001/get-a-cat-info-datail/Ragdoll/lifespan
 
 export default {
   fetch: app.fetch,
