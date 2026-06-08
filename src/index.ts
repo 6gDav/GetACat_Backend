@@ -5,11 +5,11 @@ import catImagesRouter from './components/routes/catImages'
 import catInfoRouter from './components/routes/catInfo'
 import catInfoDetailRouter from './components/routes/catInfoDetail'
 
-type Varibles = {
+type Variables = {
   catImages: string[]
 }
 
-const app = new Hono<{ Variables: Varibles }>()
+const app = new Hono<{ Variables: Variables }>()
 
 app.use('*', cors({
   origin: '*',
@@ -19,12 +19,15 @@ app.use('*', logger())
 
 app.get('/favicon.ico', (c) => c.body(null, 204))
 
-app.route('/', catImagesRouter) // :: /get-a-cat-image => http://localhost:3001/get-a-cat-image
-app.route('/', catInfoRouter) // :: /get-a-cat-info/:name => http://localhost:3001/get-a-cat-info/Ragdoll
+app.route('/', catImagesRouter)     // :: /get-a-cat-image => http://localhost:3001/get-a-cat-image
+app.route('/', catInfoRouter)       // :: /get-a-cat-info/:name => http://localhost:3001/get-a-cat-info/Ragdoll
 app.route('/', catInfoDetailRouter) // :: /get-a-cat-info-datail/get-all-names/ => http://localhost:3001/get-a-cat-info-datail/get-all-names/
                                     // :: //get-a-cat-info-datail/:name/:datail => http://localhost:3001/get-a-cat-info-datail/Ragdoll/lifespan
 
+const port = parseInt(process.env.PORT || '3001')
+
 export default {
+  port: port,
+  hostname: '0.0.0.0',
   fetch: app.fetch,
-  port: 3001
 }
