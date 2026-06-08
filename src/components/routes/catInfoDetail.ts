@@ -4,7 +4,7 @@ import limiter from "../rateLimiter";
 
 const catInfoDetailRouter = new Hono();
 
-catInfoDetailRouter.get('/get-a-cat-info-datail/get-all-names/', limiter, async (c) => {
+catInfoDetailRouter.get('/get-a-cat-info-datail/get-all-names/', limiter(3), async (c) => {
   const catNames = catDatabase.filter((cat) => cat.name).map((cat) => cat.name);
 
   return c.json(catNames);

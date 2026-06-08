@@ -1,8 +1,9 @@
 const LIMIT = 66;
 const API_URL = `https://api.thecatapi.com/v1/images/search?limit=${LIMIT}`;
+const BACKEND_NAME = "TheCatAPI"
 
 async function getCatPictures2(): Promise<string[]> {
-    console.log(`Cat images from TheCatAPI`);
+    console.log(`Cat images from ${BACKEND_NAME}.`);
 
     const catImageList: string[] = [];
 
@@ -27,10 +28,10 @@ async function getCatPictures2(): Promise<string[]> {
         });
 
     } catch (error) {
-        console.error("Error occured while trying to fetch the API (TheCatAPI)", error);
+        console.error(`❌ Error occured while trying to fetch the API (${BACKEND_NAME}).`, error);
     }
 
-    console.log(`✅ Success ${catImageList.length} pieces`);
+    console.log(`✅ Success ${catImageList.length} pieces.`);
     return catImageList;
 }
 

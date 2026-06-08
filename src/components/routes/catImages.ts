@@ -5,7 +5,7 @@ import limiter from "../rateLimiter";
 
 const catImagesRouter = new Hono();
 
-catImagesRouter.get('/get-a-cat-image', limiter, async (c) => {
+catImagesRouter.get('/get-a-cat-image', limiter(6), async (c) => {
   let images = await getCatPictures();
 
   if (!images || images.length === 0) {
