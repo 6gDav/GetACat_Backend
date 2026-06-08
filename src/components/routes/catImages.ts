@@ -10,8 +10,9 @@ catImagesRouter.get('/get-a-cat-image', limiter(6), async (c) => {
 
   if (!images || images.length === 0) {
     images = await getCatPictures2();
-  } else if (!images) {
-      return c.json(
+  }
+  if (!images || images.length === 0) {
+    return c.json(
       {
         success: false,
         message: `Error occured while tring to fetch cat images`
