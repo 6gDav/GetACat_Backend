@@ -53,7 +53,13 @@ Returns a specific property of a cat. <br>
 ```
 https://getacat-backend.onrender.com/get-a-cat-info-datail/:name/:datail
 ```
+
 <hr>
+
+Returns all of the properties.
+```
+https://getacat-backend.onrender.com/get-a-cat-info-datail/get-all-properties/
+```
 
 > 🎯 I used a rate limiter on every API endpoint. The intended client stores this data in SessionStorage.
 
