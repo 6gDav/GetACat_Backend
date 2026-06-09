@@ -79,6 +79,14 @@ To keep the application running smoothly, I implemented a robust fallback strate
 1. **Primary Source (Imgur API):** The app first attempts to fetch images using Imgur's public client token. 
 2. **Fallback Source (TheCatAPI):** If the Imgur fetch fails, the backend automatically switches to TheCatAPI. To ensure UI consistency, the fallback is configured to return exactly 66 cat images, matching Imgur's default response payload size.
 
+## 🐈 About the Database
+
+Instead of a traditional external database, the application utilizes a structured static `cats.json` file to store cat information. 
+
+* **Coverage:** Includes data for all mainstream and popular cat breeds.
+* **Content:** Each entry contains key characteristics and major properties of the respective breed.
+* **Usage:** This local dataset serves all API endpoints, except for the `/get-a-cat-image` rout
+
 ## 🌳 File tree
 ```
 ├── src 
