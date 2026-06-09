@@ -10,7 +10,13 @@ catInfoDetailRouter.get('/get-a-cat-info-datail/get-all-names/', limiter(3), asy
   return c.json(catNames);
 });
 
-catInfoDetailRouter.get('/get-a-cat-info-datail/:name/:datail', async (c) => {
+catInfoDetailRouter.get('/get-a-cat-info-datail/get-all-properties/', limiter(3), async (c) => {
+  const catNames = Object.keys(catDatabase[0]);
+
+  return c.json(catNames);
+});
+
+catInfoDetailRouter.get('/get-a-cat-info-datail/:name/:datail',limiter(3), async (c) => {
   const catName = c.req.param('name');
   const catDetail = c.req.param('datail');
 
