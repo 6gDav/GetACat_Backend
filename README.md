@@ -115,3 +115,34 @@ Instead of a traditional external database, the application utilizes a structure
 ├── package.json
 └── tsconfig.json 
 ```
+
+## 👨‍💻 Actual Development
+
+To start development just clone this repository. 
+```bash
+git clone https://github.com/6gDav/GetACat_Backend.git
+```
+Or download the ZIP.
+
+<hr>
+
+Start dev server with this command.
+```bash
+bun run dev
+```
+<hr>
+
+Build the project.
+```bash
+bun run build
+```
+
+<hr>
+
+> May be needed to download all necessary dependencies.
+```bash
+bun install
+```
+# 🪪 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
