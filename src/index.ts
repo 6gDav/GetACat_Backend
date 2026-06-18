@@ -9,7 +9,7 @@ type Variables = {
   catImages: string[]
 }
 
-const app = new Hono<{ Variables: Variables }>()
+export const app = new Hono<{ Variables: Variables }>()
 
 app.use('*', cors({
   origin: '*',
